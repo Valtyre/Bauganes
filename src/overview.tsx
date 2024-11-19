@@ -8,7 +8,7 @@ export default function Overview() {
             </header>
             <img 
                 id="homeImage" 
-                src="Bauganes1a/src/assets/house.png" 
+                src="src/assets/house.png" 
                 alt="Bauganes" 
             />
             {Content()}
