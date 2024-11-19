@@ -14,7 +14,7 @@ export default function ImageHus() {
       <div>
         <img
           id="displayImage"
-          src="Bauganes1a/src/assets/Ibud/i2.jpg"
+          src="src/assets/Ibud/i2.jpg"
           alt="Bauganes"
           onClick={toggleCarousel}
           

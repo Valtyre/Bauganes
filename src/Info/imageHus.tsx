@@ -14,7 +14,7 @@ export default function ImageHus() {
       <div>
         <img
           id="displayImage"
-          src="Bauganes1a/src/assets/house1.png"
+          src="src/assets/house1.png"
           alt="Bauganes"
           onClick={toggleCarousel}
           style={{ cursor: 'pointer' }}
