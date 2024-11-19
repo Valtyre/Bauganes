@@ -1,0 +1,186 @@
+body, div {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  /* position: absolute; */
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#homeImage {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(99, 180, 49, 0.6);
+  color: #FFFFFF;
+  z-index: 10;
+  padding: 0;
+}
+
+#content {
+  /* background-color: aqua;  */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  padding-bottom: 0px;
+  margin-top: 20px;
+}
+
+#regularText {
+  /* background-color: red; */
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+}
+
+#element {
+  /* background-color: blue; */
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#infoboxContainer {
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#infobox {
+  background-color: rgb(58, 116, 80);
+  padding: 10px;
+  color: #FFF;
+  border-radius: 5px;
+  width: 110px;
+  text-align: center;
+}
+
+#displayImage {
+  width: 100%;
+  max-width: 450px;
+  min-width: 100px;
+  height: auto;
+  box-sizing: border-box; /* Prevents border from affecting the element's size */
+  border: 4px solid rgba(99, 180, 49, 0.0);;
+}
+
+#displayImage:hover {
+  border: 4px solid rgba(99, 180, 49); /* Example border color */
+  cursor: pointer;
+}
+
+#notText {
+  /* background-color: burlywood; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 1001;
+}
+/* Fullscreen overlay */
+.carousel-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Carousel container to occupy the full viewport */
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Slide styling to fit the screen without cropping */
+.slide {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Ensure the image is fully visible */
+  display: none; /* Hide all images initially */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Button styling */
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 5rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.carousel button:first-of-type {
+  left: 20px;
+  color:  rgba(99, 180, 49);
+}
+
+.carousel button:last-of-type {
+  right: 20px;
+  color:  rgba(99, 180, 49, 0.6);; 
+}
+
+#credit {
+  /* background-color: red; */
+  min-height: 40px;
+  margin-right: 30px;
+  color: gray;
+  text-align: right;
+}
